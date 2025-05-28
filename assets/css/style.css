@@ -17,7 +17,7 @@
 
 	/* backgroud colors */
 	--bg-white: hsl(0, 0%, 100%);
-	--bg-graid-blue: -webkit-linear-gradient(top right, #4d93b3be, #185878ac);
+	--bg-graid-blue: -webkit-linear-gradient(top right, #33667ec9, #0b2838ac);
 	--bg-graid-blue2: -webkit-linear-gradient(top right, #4d93b3e1, #185878d7);
 	--bg-graid-blue-white: -webkit-linear-gradient(top left, #4d93b3, #ecececac);
 	--bg-gray: #f7f9fb;
@@ -295,17 +295,18 @@ body {
 	font-size: 50px;
 }
 .cta{
-	background-color: white;
-	color: var(--text-white);
-	border-radius: 6px;
-padding: 9px 25px;
-margin-top: 10px;
+	background-color: var(--bg-green);
+	color: white;
+	border-radius: 10px;
+	padding: 10px 25px 15px 25px;
+	margin-top: 10px;
+	box-shadow: 1px 5px 20px 5px rgba(255, 255, 255, 0.342);
 }
 .cta a {
 	font-size: 18px;
-	color: var(--text-green);
+	color:white;
 	text-decoration: none;
-	font-weight: 700;
+	font-weight: bold;
 }
 
 
@@ -334,8 +335,9 @@ margin-top: 10px;
 	color: var(--bg-green);
 }
 .dream{
-	font-size: 35px;
-	width: 80%;
+	font-size: 40px;
+	font-weight: 700;
+	width: 90%;
 }
 .whopar{
 	font-size: large;
@@ -583,20 +585,23 @@ margin-top: 10px;
 	border: 1px solid var(--bg-green) !important;
 	border-radius: 5px !important;
 	color: var(--bg-green) !important;
+	
 }
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link {
 	color: #b8b5b5 !important;
 	margin: 0 10px;
 	border-radius: 5px !important;
-
 	border: 1px solid #a1a0a0 !important;
 }
 .nav-tabs {
 	border: none !important;
 }
 
-
+.nav-link{
+	font-size: 20px !important;
+margin: 5px 0;
+}
 
 
 
@@ -692,11 +697,26 @@ background: linear-gradient(to top, var(--bg-green), var(--bg-green));
 .qeem{
 	margin-top: 60px;
 }
+.reyadf{position: relative;}
+.reyad-name{
+	position: absolute;
+	right: 18%;
+	top: 40%;
+	opacity: 0.1;
+	color: white;
+	z-index: 10;
+	font-size: 70px;
+	font-weight: 700;
+}
+ .message{
+	margin-top: 180px !important;
+ }
 .roaya , .message{
-	padding: 20px;
-	box-shadow: var(--shadow-1);
+	padding: 30px;
+box-shadow: 20px 20px 80px 0px rgba(0, 0, 0, 0.14);
 	border-radius: 15px;
-	margin: 40px 0 ;
+	margin-top: 40px;
+	width: 100%;
 	transition: 0.6s ease-in-out all;
 }
 .roaya h3, .message h3{
@@ -721,12 +741,12 @@ position: relative;}
 content: "";
 position: absolute;
 width: 100%;
-border-radius: 35px 18px 18px 18px;
-height: 100%;
-z-index: +1;
+border-radius: 65px 12px 12px 12px;
+height: 80%;
+z-index: -1;
 background: var(--bg-graid-blue);
 right:0;
-top: 0;
+bottom: 0;
 }
 .icons i{
 	margin-right: 10px;
@@ -845,14 +865,17 @@ top: 0;
 .btn-contact,.btn-whats{
 	color: white;
 	padding: 10px 18px;
-	border-radius: 5%;
 	text-decoration: none;
-	margin-top: 65px;
+	margin-top: 95px;
 	height: 50px;
 	background-color: var(--bg-green);
-	border: 1px solid white;
+	margin-right:0; 
 }
 
+.to-injaz{
+	text-shadow:  1px 3px 10px #ffffff81;
+	font-weight: 600;
+}
 .lead{
 	font-size: 16px !important;
 	width: 90%;
