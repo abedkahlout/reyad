@@ -9,7 +9,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 :root {
 	/**
    * COLORS
@@ -87,7 +87,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @font-face {
   font-family: 'DINNextLTArabic';
-  src: url('../fonts/DINNextLTArabic-Regular-3.ttf') format('truetype');
+  src: url('../fonts/4_67.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -297,7 +297,7 @@ body {
 .cta{
 	background-color: var(--bg-green);
 	color: white;
-	border-radius: 10px;
+	border-radius: 3px;
 	padding: 10px 25px 15px 25px;
 	margin-top: 10px;
 	box-shadow: 1px 5px 20px 5px rgba(255, 255, 255, 0.342);
@@ -308,8 +308,23 @@ body {
 	text-decoration: none;
 	font-weight: bold;
 }
+.social{
+	color: white;
+	font-size: 22px;
+	
+}
+.social:hover{
+	color: rgb(255, 210, 12);
 
-
+	
+}
+.logo-footer{
+	border-radius:10px ;
+}
+.porder-hr{
+	border-top: 1px solid rgb(219, 219, 219);
+	padding-top: 40px;
+}
 /*-----------------------------------*\
   #who WE ARE
 \*-----------------------------------*/
@@ -709,7 +724,7 @@ background: linear-gradient(to top, var(--bg-green), var(--bg-green));
 	font-weight: 700;
 }
  .message{
-	margin-top: 180px !important;
+	margin-top: 150px !important;
  }
 .roaya , .message{
 	padding: 30px;
@@ -734,6 +749,7 @@ border-radius: 35px 18px 18px 18px;
 
 
 }
+
 .img-eng {
 position: relative;}
 
@@ -749,11 +765,11 @@ right:0;
 bottom: 0;
 }
 .icons i{
-	margin-right: 10px;
-	background: var(--bg-green);
+	margin-right: 7px;
 	padding: 5px;
+	font-size: 30px;
 	border-radius: 5px;
-	color: white;
+	color: var(--bg-green);
 }
 .icons{
 	margin: 0;
@@ -1075,23 +1091,13 @@ bottom: 0;
   #FOOTER
 \*-----------------------------------*/
 footer {
-	background-color: var(--bg-gray);
-	min-height: 53vh;
+	background-color: var(--bg-green);
+	min-height: 43vh;
 	margin-top: 70px;
+	color: white;
 	padding: 70px 0;
 }
-footer h5 {
-	color: var(--bg-green);
-	margin: 0px 28px;
-}
-.linkfooter {
-	margin: 15px 0;
-	text-align: right;
-	transition: var(--transition-1);
-}
-.linkfooter:hover {
-	color: var(--bg-green);
-}
+
 
 /*-----------------------------------*\
   # NEW PAGE 
@@ -1107,10 +1113,11 @@ footer h5 {
   font-weight: var(--weight-bold);
   padding-right: 15px;
   margin-top: 50px;
-  margin-bottom: 20px;
+  margin-bottom: 7px;
 }
 .subtitle-we{
-  color: rgb(169, 169, 169);
+  color: rgb(3, 3, 3);
+  
   font-size: var(--fontSize-8);
 }
 .left-side-container{
@@ -1143,13 +1150,71 @@ footer h5 {
 }
 
 
+.service-container{
+	background-color: rgb(245, 245, 245);
+	padding: 40px 20px;
+	margin-top: 40px;
+}
+
+.box{
+	background-color: rgb(253, 253, 253);
+	padding: 20px;
+	height: 200px;
+	border-radius: 7px;
+	box-shadow: 0 8px 14px 0 rgba(179, 177, 177, 0.2);
+	transition: 0.7s all ease-in-out;
+}
+
+.box:hover{
+		background-color: rgb(255, 255, 255);
+	border: 0.3px solid var(--bg-green);
+	box-shadow: 0 8px 14px 0 rgba(179, 177, 177, 0.4);
+}
 
 
-
-
-
-
-
+.contact-system{
+	padding: 35px 0;
+	margin-top: 70px;
+	background-color: rgb(252, 252, 252);
+}
+.p-contact{
+	font-size: 21px;
+	width: 80%;
+	margin-top: 20px;
+}
+.p-contact2{
+	font-size: 18px;
+	width: 80%;
+	margin-top: 20px;
+}
+.template{
+	color: var(--bg-green);
+}
+.form-control{
+	border: 1px solid var(--bg-green) !important;
+	padding: 10px !important;
+}
+/* .contact-speed{
+	margin-top: 80px;
+} */
+ .locate-page{
+	font-size: 20px !important;
+	padding: 5px 20px;
+	background-color: #185878b0;
+	color: rgb(255, 255, 255);
+	border-radius: 5px;
+ }
+.send-now{
+	background-color: var(--bg-green) !important;
+	color: white !important;
+}
+.forms-cont{
+	background: rgb(255, 255, 255);
+	width: auto;
+	box-shadow: var(--shadow-1);
+	border-radius: 15px;
+	padding: 40px;
+}
 
 
 
@@ -1240,4 +1305,23 @@ Hero
 	footer h5 {
 		margin: 20px;
 	}
+
+	/* 
+	mobile system index page
+	*/
+	.to-injaz{
+		font-size: 25px;
+	}
+	.cta{
+	background-color: var(--bg-green);
+	color: white;
+	border-radius: 10px;
+	padding: 10px ;
+	font-size: 10px;
+	margin-top: 10px;
+	box-shadow: 1px 5px 20px 5px rgba(255, 255, 255, 0.342);
+}
+	.cta a{
+		font-size: small;
+}
 }
